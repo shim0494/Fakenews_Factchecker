@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.fakenews_factchecker.R
 import com.example.fakenews_factchecker.databinding.FragmentDashboardBinding
 
-class DashboardFragment : Fragment() {
+class DashboardFragment : Fragment{
 
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
@@ -19,6 +19,8 @@ class DashboardFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    constructor() : super()
 
     override fun onCreateView(
         inflater: LayoutInflater,
