@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/navigation_home"
         android:title="검색"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
         android:icon="@drawable/ic_baseline_search_24" />
-    <item android:id="@+id/navigation_dashboard"
+    <item android:id="@+id/navigation_chart"
         android:title="인기 키워드"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
         android:icon="@drawable/ic_baseline_bar_chart_24" />
-    <item android:id="@+id/navigation_notifications"
+    <item android:id="@+id/navigation_bookmark"
         android:title="북마크"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
         android:icon="@drawable/ic_baseline_bookmark_24" />
     <item android:id="@+id/navigation_option"
         android:title="설정"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
         android:icon="@drawable/ic_settings_black_24dp" />
 </menu>
