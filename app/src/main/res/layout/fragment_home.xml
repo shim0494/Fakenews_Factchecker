@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:id="@+id/notice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="335dp"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_notifications_24"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -14,6 +32,7 @@
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintVertical_bias="0.571"
         tools:layout_editor_absoluteX="4dp">
+
 
         <TextView
             android:id="@+id/text_home"
@@ -53,7 +72,8 @@
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/text3">
+            app:layout_constraintTop_toBottomOf="@+id/text3"
+            tools:ignore="MissingConstraints">
 
             <RadioButton
                 android:id="@+id/radioButton"
@@ -87,7 +107,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/text4"
-            tools:layout_editor_absoluteX="2dp">
+            tools:layout_editor_absoluteX="2dp"
+            tools:ignore="MissingConstraints">
 
             <RadioButton
                 android:id="@+id/radioButton4"
